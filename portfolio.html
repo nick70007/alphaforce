@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- CSS -->
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/css/style.css" rel="stylesheet">
+      <link href="assets/css/responsive.css" rel="stylesheet">
+      <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+      <link href="assets/css/aos.css" rel="stylesheet">
+      <link href="assets/css/nice-select.css" rel="stylesheet">
+      <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+      <!-- CSS -->
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <title>AlphaForce - Blockchain HTML5 Template</title>
+   </head>
+   <body>
+      <div class="top-shape"></div>
+      <!-- Header area -->
+      <header class="header-area">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="header-main d-flex justify-content-between align-items-center">
+                     <div class="logo">
+                        <a href="index.html"><img src="assets/images/logo.svg" alt=""></a>
+                     </div>
+                     <nav class="navbar navbar-expand-lg p-0">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                           <span id="menu-btn" class="menubar">
+                              <span class='top'></span>
+                              <span class='middle'></span>
+                              <span class='bottom'></span>
+                           </span>
+                        </button>
+                        <div class="collapse navbar-collapse">
+                           <div class="responsive-header d-flex justify-content-between align-items-center">
+                              <div class="r-logo">
+                                 <a href="index.html"><img src="assets/images/logo.svg" alt=""></a>
+                              </div>
+                              <span class="r-close"><i class="fas fa-times fa-fw"></i></span>
+                           </div>
+                           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="portfolio.html">Portfolio</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="staking.html">Staking</a>
+                              </li>
+                           </ul>
+                           <div class="header-btn">
+                              <a href="javascript:void(0);" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#connect-wallet">
+                                 <svg class="mr-6" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.2596 1.64423H2.74038C1.22932 1.64423 0 2.87355 0 4.38461V14.6154C0 16.1264 1.22932 17.3557 2.74038 17.3557H16.2596C17.7707 17.3557 19 16.1264 19 14.6154V4.38461C19 2.87355 17.7707 1.64423 16.2596 1.64423ZM17.9039 11.1442H13.8846C12.978 11.1442 12.2404 10.4066 12.2404 9.49998C12.2404 8.59333 12.978 7.85574 13.8846 7.85574H17.9039V11.1442ZM17.9039 6.75961H13.8846C12.3736 6.75961 11.1442 7.98893 11.1442 9.49998C11.1442 11.011 12.3736 12.2404 13.8846 12.2404H17.9039V14.6154C17.9039 15.522 17.1663 16.2596 16.2596 16.2596H2.74038C1.83376 16.2596 1.09614 15.522 1.09614 14.6154V4.38461C1.09614 3.47799 1.83372 2.74036 2.74038 2.74036H16.2596C17.1662 2.74036 17.9039 3.47795 17.9039 4.38461V6.75961Z" fill="white"/>
+                                    <path d="M14.6154 8.9519H13.8846C13.5819 8.9519 13.3365 9.19731 13.3365 9.49997C13.3365 9.80267 13.582 10.048 13.8846 10.048H14.6154C14.9181 10.048 15.1634 9.80264 15.1634 9.49997C15.1634 9.19727 14.9181 8.9519 14.6154 8.9519Z" fill="white"/>
+                                 </svg>
+                                 Connect wallet 
+                              </a>
+                           </div>
+                        </div>
+                     </nav>
+                     <div class="header-btn">
+                        <a href="javascript:void(0);" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#connect-wallet">
+                           <svg class="mr-6" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.2596 1.64423H2.74038C1.22932 1.64423 0 2.87355 0 4.38461V14.6154C0 16.1264 1.22932 17.3557 2.74038 17.3557H16.2596C17.7707 17.3557 19 16.1264 19 14.6154V4.38461C19 2.87355 17.7707 1.64423 16.2596 1.64423ZM17.9039 11.1442H13.8846C12.978 11.1442 12.2404 10.4066 12.2404 9.49998C12.2404 8.59333 12.978 7.85574 13.8846 7.85574H17.9039V11.1442ZM17.9039 6.75961H13.8846C12.3736 6.75961 11.1442 7.98893 11.1442 9.49998C11.1442 11.011 12.3736 12.2404 13.8846 12.2404H17.9039V14.6154C17.9039 15.522 17.1663 16.2596 16.2596 16.2596H2.74038C1.83376 16.2596 1.09614 15.522 1.09614 14.6154V4.38461C1.09614 3.47799 1.83372 2.74036 2.74038 2.74036H16.2596C17.1662 2.74036 17.9039 3.47795 17.9039 4.38461V6.75961Z" fill="white"/>
+                              <path d="M14.6154 8.9519H13.8846C13.5819 8.9519 13.3365 9.19731 13.3365 9.49997C13.3365 9.80267 13.582 10.048 13.8846 10.048H14.6154C14.9181 10.048 15.1634 9.80264 15.1634 9.49997C15.1634 9.19727 14.9181 8.9519 14.6154 8.9519Z" fill="white"/>
+                           </svg>
+                           Connect wallet 
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Header area -->
+      <!-- Portfolio area -->
+      <section class="portfolio-area p-110">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="page-title mb-100 text-center" data-aos="zoom-in">
+                     <h2>Portfolio</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-7 col-12">
+                  <div class="portfolio-trend" data-aos="fade-up">
+                     <div class="port-title">
+                        <h2>NAV Trend</h2>
+                     </div>
+                     <div class="map-area position-relative">
+                        <div id="portfolio-container"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-5 col-12">
+                  <div class="daily-return" data-aos="fade-up">
+                     <div class="port-title">
+                        <h2>Daily return</h2>
+                     </div>
+                     <div class="theme-table text-center mt-30">
+                        <div class="theme-table-bg">
+                           <div class="table-responsive">
+                              <table class="w-100">
+                                 <thead>
+                                    <tr>
+                                       <th>Date</th>
+                                       <th>Return</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>2023-02-03</td>
+                                       <td>0.0345%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-02-02</td>
+                                       <td>0.0234%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-02-01</td>
+                                       <td>0.0345%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-01-31</td>
+                                       <td>0.0234%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-01-30</td>
+                                       <td>0.0345%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-01-29</td>
+                                       <td>0.0234%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-01-29</td>
+                                       <td>0.0234%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-01-29</td>
+                                       <td>0.0234%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-01-29</td>
+                                       <td>0.0234%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-01-29</td>
+                                       <td>0.0234%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-01-29</td>
+                                       <td>0.0234%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-01-29</td>
+                                       <td>0.0234%</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="deposit-withdraw-area position-relative mt-100">
+               <div class="left-shape"></div>
+               <div class="row">
+                  <div class="col-lg-6 col-12">
+                     <div class="deposit-card" data-aos="zoom-in">
+                        <h2>Deposit</h2>
+                        <div class="deposit-form d-flex">
+                           <div class="form-group position-relative">
+                              <input class="form-control" type="text" name="usdc" value="100,000">
+                              <span>USDC</span>
+                              <p>Available: 123,456,78 USDC</p>
+                           </div>
+                           <div class="deposit-swap">
+                              <svg class="cursor-pointer" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25 5.375C15.867 5.375 7.71899 11.9395 5.80849 20.8785C4.85399 25.345 5.49699 30.0945 7.62649 34.136C9.67599 38.0255 13.036 41.169 17.056 42.9505C21.2375 44.804 26.038 45.127 30.433 43.863C34.673 42.644 38.4325 39.9685 40.992 36.377C46.3435 28.8685 45.628 18.3215 39.332 11.5935C35.642 7.6505 30.401 5.375 25 5.375ZM34.4145 26.0485L29.0645 31.5275C27.71 32.915 25.569 30.813 26.918 29.432L29.6175 26.6675H16.8245C15.916 26.6675 15.158 25.909 15.158 25.001C15.158 24.093 15.9165 23.3345 16.8245 23.3345H29.5535L26.8005 20.582C25.4325 19.214 27.5535 17.0925 28.9215 18.4605L34.402 23.9405C34.6812 24.2195 34.839 24.5973 34.8414 24.9919C34.8437 25.3866 34.6903 25.7662 34.4145 26.0485Z" fill="white"/></svg>
+                           </div>
+                           <div class="form-group position-relative">
+                              <input class="form-control" type="text" name="alp" value="100,000">
+                              <span>aLP</span>
+                              <p>You will get aLP after GMT 2023/03/27, 8am </p>
+                           </div>
+                        </div>
+                        <div class="deposit-btn text-center mt-30">
+                           <button class="btn btn-secondary">Deposit <svg class="ml-6" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_300_145)">
+                                 <path d="M19.7709 9.44699L19.7702 9.44625L15.688 5.38375C15.3821 5.07941 14.8875 5.08054 14.5831 5.3864C14.2787 5.69222 14.2799 6.18687 14.5857 6.49125L17.3265 9.21875H0.78125C0.349766 9.21875 0 9.56851 0 10C0 10.4315 0.349766 10.7812 0.78125 10.7812H17.3264L14.5857 13.5087C14.2799 13.8131 14.2788 14.3078 14.5831 14.6136C14.8875 14.9195 15.3822 14.9205 15.688 14.6162L19.7702 10.5537L19.7709 10.553C20.0769 10.2476 20.0759 9.75136 19.7709 9.44699Z" fill="white"></path>
+                              </g>
+                              <defs>
+                                 <clipPath>
+                                    <rect width="20" height="20" fill="white"></rect>
+                                 </clipPath>
+                              </defs>
+                           </svg></button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 col-12">
+                     <div class="deposit-card" data-aos="zoom-in">
+                        <h2>Withdraw</h2>
+                        <div class="deposit-form d-flex">
+                           <div class="form-group position-relative">
+                              <input class="form-control" type="text" name="alp" value="100,000">
+                              <span>aLP</span>
+                              <p>Available: 123,456,78 USDC</p>
+                           </div>
+                           <div class="deposit-swap">
+                              <svg class="cursor-pointer" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25 5.375C15.867 5.375 7.71899 11.9395 5.80849 20.8785C4.85399 25.345 5.49699 30.0945 7.62649 34.136C9.67599 38.0255 13.036 41.169 17.056 42.9505C21.2375 44.804 26.038 45.127 30.433 43.863C34.673 42.644 38.4325 39.9685 40.992 36.377C46.3435 28.8685 45.628 18.3215 39.332 11.5935C35.642 7.6505 30.401 5.375 25 5.375ZM34.4145 26.0485L29.0645 31.5275C27.71 32.915 25.569 30.813 26.918 29.432L29.6175 26.6675H16.8245C15.916 26.6675 15.158 25.909 15.158 25.001C15.158 24.093 15.9165 23.3345 16.8245 23.3345H29.5535L26.8005 20.582C25.4325 19.214 27.5535 17.0925 28.9215 18.4605L34.402 23.9405C34.6812 24.2195 34.839 24.5973 34.8414 24.9919C34.8437 25.3866 34.6903 25.7662 34.4145 26.0485Z" fill="white"/></svg>
+                           </div>
+                           <div class="form-group position-relative">
+                              <input class="form-control" type="text" name="usdc" value="100,000">
+                              <span>USDC</span>
+                              <p>You will get USDC after GMT 2023/05/01, 8am</p>
+                           </div>
+                        </div>
+                        <div class="deposit-btn text-center mt-30">
+                           <button class="btn btn-secondary">Withdraw <svg class="ml-6" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_300_145)">
+                                 <path d="M19.7709 9.44699L19.7702 9.44625L15.688 5.38375C15.3821 5.07941 14.8875 5.08054 14.5831 5.3864C14.2787 5.69222 14.2799 6.18687 14.5857 6.49125L17.3265 9.21875H0.78125C0.349766 9.21875 0 9.56851 0 10C0 10.4315 0.349766 10.7812 0.78125 10.7812H17.3264L14.5857 13.5087C14.2799 13.8131 14.2788 14.3078 14.5831 14.6136C14.8875 14.9195 15.3822 14.9205 15.688 14.6162L19.7702 10.5537L19.7709 10.553C20.0769 10.2476 20.0759 9.75136 19.7709 9.44699Z" fill="white"></path>
+                              </g>
+                              <defs>
+                                 <clipPath>
+                                    <rect width="20" height="20" fill="white"></rect>
+                                 </clipPath>
+                              </defs>
+                           </svg></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="history-trx mt-100" data-aos="fade-up">
+               <div class="row">
+                  <div class="col-12">
+                     <div class="port-title">
+                        <h2>History Transaction</h2>
+                     </div>
+                     <div class="theme-table text-center mt-30">
+                        <div class="theme-table-bg">
+                           <div class="table-responsive">
+                              <table class="w-100">
+                                 <thead>
+                                    <tr>
+                                       <th>Transaction Time</th>
+                                       <th>Action</th>
+                                       <th>Amount</th>
+                                       <th>TxHash</th>
+                                       <th>Validate Time</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>2023-02-01 17:21:35</td>
+                                       <td>Subscribe</td>
+                                       <td>100000 USDC</td>
+                                       <td><a href="">Link</a></td>
+                                       <td>2023-02-03, 8:00:00</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-02-01 17:21:35</td>
+                                       <td>Redeem</td>
+                                       <td>100000 aLP</td>
+                                       <td><a href="">Link</a></td>
+                                       <td>2023-02-03, 8:00:00</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-02-01 17:21:35</td>
+                                       <td>Redeem</td>
+                                       <td>100000 aLP</td>
+                                       <td><a href="">Link</a></td>
+                                       <td>2023-02-03, 8:00:00</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-02-01 17:21:35</td>
+                                       <td>Redeem</td>
+                                       <td>100000 aLP</td>
+                                       <td><a href="">Link</a></td>
+                                       <td>2023-02-03, 8:00:00</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-02-01 17:21:35</td>
+                                       <td>Redeem</td>
+                                       <td>100000 aLP</td>
+                                       <td><a href="">Link</a></td>
+                                       <td>2023-02-03, 8:00:00</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-02-01 17:21:35</td>
+                                       <td>Redeem</td>
+                                       <td>100000 aLP</td>
+                                       <td><a href="">Link</a></td>
+                                       <td>2023-02-03, 8:00:00</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-02-01 17:21:35</td>
+                                       <td>Redeem</td>
+                                       <td>100000 aLP</td>
+                                       <td><a href="">Link</a></td>
+                                       <td>2023-02-03, 8:00:00</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-02-01 17:21:35</td>
+                                       <td>Redeem</td>
+                                       <td>100000 aLP</td>
+                                       <td><a href="">Link</a></td>
+                                       <td>2023-02-03, 8:00:00</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-02-01 17:21:35</td>
+                                       <td>Redeem</td>
+                                       <td>100000 aLP</td>
+                                       <td><a href="">Link</a></td>
+                                       <td>2023-02-03, 8:00:00</td>
+                                    </tr>
+                                    <tr>
+                                       <td>2023-02-01 17:21:35</td>
+                                       <td>Redeem</td>
+                                       <td>100000 aLP</td>
+                                       <td><a href="">Link</a></td>
+                                       <td>2023-02-03, 8:00:00</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Portfolio area -->
+      <!-- Footer area -->
+      <footer class="footer-main position-relative p-150 pb-0">
+         <div class="bg-img">
+            <img src="assets/images/footer-bg.png" alt="">
+         </div>
+         <div class="container">
+            <div class="footer-top">
+               <div class="row">
+                  <div class="col-lg-3 col-12">
+                     <div class="footer-item">
+                        <div class="footer-logo">
+                           <a href="index.html"><img src="assets/images/footer-logo.svg" alt=""></a>
+                        </div>
+                        <div class="footer-social">
+                           <a href="" target="_blank"><i class="fab fa-telegram-plane fa-fw"></i></a>
+                           <a href="" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+                           <a href="" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+                           <a href="" target="_blank"><i class="fab fa-discord fa-fw"></i></a>
+                           <a href="" target="_blank"><i class="fab fa-medium-m fa-fw"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-8 offset-lg-1 col-12">
+                     <div class="footer-list d-flex justify-content-between">
+                        <div class="footer-item">
+                           <h3>Solution</h3>
+                           <ul>
+                              <li><a href="">Fixed - income products</a></li>
+                              <li><a href="">Structured products</a></li>
+                              <li><a href="">Index - linked products</a></li>
+                           </ul>
+                        </div>
+                        <div class="footer-item">
+                           <h3>Security</h3>
+                           <ul>
+                              <li><a href="">Audit Reports</a></li>
+                           </ul>
+                        </div>
+                        <div class="footer-item">
+                           <h3>Developers</h3>
+                           <ul>
+                              <li><a href="">ERC-3525</a></li>
+                              <li><a href="">Github</a></li>
+                              <li><a href="">SFTLabs</a></li>
+                           </ul>
+                        </div>
+                        <div class="footer-item">
+                           <h3>Resources</h3>
+                           <ul>
+                              <li><a href="">ERC-3525</a></li>
+                              <li><a href="">Github</a></li>
+                              <li><a href="">SFTLabs</a></li>
+                           </ul>
+                        </div>
+                        <div class="footer-item">
+                           <h3>Contact Us</h3>
+                           <ul>
+                              <li><a href="">Contact us</a></li>
+                              <li><a href="">Career</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright position-relative">
+               <div class="row">
+                  <div class="col-12">
+                     <div class="copyright-main d-flex justify-content-between align-items-center">
+                        <div class="copyright-text">
+                           <p>© 2023 AlphaForce. All Rights Reserved.</p>
+                        </div>
+                        <div class="copyright-link">
+                           <a href="">Disclaimer</a><a href="terms.html">Terms of Use</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer area -->
+      <!-- Modal area -->
+      <div class="modal fade connect-wallet" id="connect-wallet" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_273_969)"><path d="M25 49.9835C38.8071 49.9835 50 38.798 50 25C50 11.2019 38.8071 0.0163574 25 0.0163574C11.1929 0.0163574 0 11.2019 0 25C0 38.798 11.1929 49.9835 25 49.9835Z" fill="white"/><path d="M36.7988 32.9274L32.9325 36.7939L13.2055 17.0676L17.0719 13.2011L36.7988 32.9274Z" fill="#121212"/><path d="M36.7993 17.0723L17.073 36.7992L13.2065 32.9329L32.9328 13.2059L36.7993 17.0723Z" fill="#121212"/></g><defs><clipPath id="clip0_273_969"><rect width="50" height="50" fill="white"/></clipPath></defs></svg>
+              </button>
+              <div class="modal-title">
+                 <h2>Connect your wallet to continue</h2>
+              </div>
+              <div class="wallet-suggesion">
+                 <div class="suggesion-item position-relative">
+                     <span class="suggesion-bug">1</span>
+                    <h3>Accept <a href="terms.html">Terms of Service</a> and <a href="">Privacy Policy</a></h3>
+                    <div class="form-check">
+                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                       <label class="form-check-label" for="flexCheckDefault">
+                         I read and accept
+                       </label>
+                     </div>
+                 </div>
+                 <div class="suggesion-item position-relative">
+                     <span class="suggesion-bug">2</span>
+                    <h3>Choose wallet</h3>
+                    <div class="suggesion-ico disabled clearfix">
+                       <div class="wallet-ico text-center">
+                          <span><img src="assets/images/metamask.png" alt=""></span>
+                          <h3>Metamask</h3>
+                       </div>
+                       <div class="wallet-ico text-center">
+                          <span><img src="assets/images/wallet-connect.png" alt=""></span>
+                          <h3>WalletConnect</h3>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal area -->
+      <!-- Back top area -->
+      <a class="back-top" id="button">
+         <img src="assets/images/back-top.png" alt="">
+      </a>
+      <!-- Back top area -->
+      <!-- Javascript -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/nice-select.js"></script>
+      <script src="assets/js/owl.carousel.js"></script>
+      <script src="assets/js/aos.js"></script>
+      <script src="https://cdn.fusioncharts.com/fusioncharts/3.18.0/fusioncharts.js"></script>
+      <script src="assets/js/fusioncharts.theme.fusion.js"></script>
+      <script src="assets/js/portfolio-chart.js"></script>
+      <script src="assets/js/custom.js"></script>
+      <!-- Javascript -->
+   </body>
+</html>
